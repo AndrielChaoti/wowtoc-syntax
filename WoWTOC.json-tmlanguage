@@ -1,0 +1,40 @@
+{   "name": "World of Warcraft TOC",
+    "scopeName": "source.toc",
+    "fileTypes": ["toc"],
+    "patterns": [
+
+        { "name": "keyword.tag.toc",
+          "begin": "##",
+          "patterns":[
+            { "name": "constant.language.tag.custom.toc",
+              "match": "[Xx]-([^:]+)",
+              "captures": {
+                "1": {"name": "string.toc"}
+              }
+            },
+            { "name": "constant.language.tag.localized.toc",
+              "match": "(?i)(title-|notes-|description-)(enUS|enGB|frFR|deDE|esES|esMX|ruRU|koKR|zhTW|zhCN)",
+              "comment": "localized title/description strings"
+            },
+            { "name": "constant.language.tag.known.toc",
+              "match": "(?i)(interface|title|notes|description|requireddeps|\\bdep[^:]+|optionaldeps|loadondemand|loadwith|loadmanagers|savedvariablespercharacter|savedvariables|defaultstate|secure|author|version)",
+              "comment": "known acceptable tag strings"
+            },
+            { "name": "invalid.tag.known.toc",
+              "match": "\\S[^:]+",
+              "comment": "Invalid tags highlight as syntax errors"
+            }
+          ],
+          "end": "(:|\\Z)"
+        },
+
+        { "match": "^#[^#]+$",
+          "name": "comment.source.toc",
+          "captures": {
+              "1": {"name":"comment.source.toc"}
+            },
+          "comment": "Comments"
+        }
+    ],
+  "uuid": "f3883b6b-18b0-47a0-8a74-c998a8425ff4"
+}
