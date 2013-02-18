@@ -37,7 +37,7 @@
 					<key>comment</key>
 					<string>localized title/description strings</string>
 					<key>match</key>
-					<string>(?i)(title-|notes-|description-)(enUS|enGB|frFR|deDE|esES|ruRU|koKR|zhTW|zhCN)</string>
+					<string>(?i)(title-|notes-|description-)(enUS|enGB|frFR|deDE|esES|esMX|ruRU|koKR|zhTW|zhCN)</string>
 					<key>name</key>
 					<string>constant.language.tag.localized.toc</string>
 				</dict>
