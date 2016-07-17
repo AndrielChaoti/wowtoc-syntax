@@ -13,7 +13,7 @@
               }
             },
             { "name": "constant.language.tag.localized.toc",
-              "match": "(?i)(title-|notes-|description-)(enUS|enGB|frFR|deDE|esES|esMX|ruRU|koKR|zhTW|zhCN)",
+              "match": "(?i)(title-|notes-|description-)(enUS|enGB|frFR|deDE|esES|esMX|itIT|ruRU|koKR|zhTW|zhCN)",
               "comment": "localized title/description strings"
             },
             { "name": "constant.language.tag.known.toc",
